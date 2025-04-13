@@ -22,23 +22,22 @@ docker-compose up -d
 Accesam http://localhost în browser, si observam ca lucreaza
 
 ## Întrebări și răspunsuri
-În ce ordine sunt pornite containerele?
+1. În ce ordine sunt pornite containerele?
 Ordinea nu este garantată implicit, dar docker-compose încearcă să pornească serviciile în ordinea în care sunt definite în fișierul docker-compose.yml.
 
-Unde sunt stocate datele bazei de date?
+2. Unde sunt stocate datele bazei de date?
 În volumul Docker denumit db_data, montat în container la /var/lib/mysql.
 
-Cum se numesc containerele proiectului?
+3. Cum se numesc containerele proiectului?
 <img width="1419" alt="Screenshot 2025-04-13 at 13 09 56" src="https://github.com/user-attachments/assets/5ded6c4f-6dae-44a6-ba43-c0077d8afc9f" />
 (numele directorului + numele serviciului + indexul)
 
-Cum adăugăm variabila de mediu APP_VERSION pentru serviciile backend și frontend?
+4. Cum adăugăm variabila de mediu APP_VERSION pentru serviciile backend și frontend?
 Se creează fișierul .env cu:
 env
 APP_VERSION=1.0.0
 Se adaugă linia:
-env_file:
-  - app.env
+env_file: app.env
 în serviciile frontend și backend.
 
 ## Concluzii
