@@ -14,7 +14,11 @@ Fișier .gitignore
 nginx, default.conf
 Fișier docker-compose.yml
 Fișier .env
+<img width="816" alt="Screenshot 2025-04-13 at 12 58 15" src="https://github.com/user-attachments/assets/bf3c93fd-b2ff-46bc-b43f-679b6f06b41e" />
+
 docker-compose up -d
+<img width="467" alt="Screenshot 2025-04-13 at 13 08 48" src="https://github.com/user-attachments/assets/a6dee076-f244-4995-81d1-a1b90f9585b7" />
+
 Accesam http://localhost în browser, si observam ca lucreaza
 
 ## Întrebări și răspunsuri
@@ -25,7 +29,7 @@ Unde sunt stocate datele bazei de date?
 În volumul Docker denumit db_data, montat în container la /var/lib/mysql.
 
 Cum se numesc containerele proiectului?
-
+<img width="1419" alt="Screenshot 2025-04-13 at 13 09 56" src="https://github.com/user-attachments/assets/5ded6c4f-6dae-44a6-ba43-c0077d8afc9f" />
 (numele directorului + numele serviciului + indexul)
 
 Cum adăugăm variabila de mediu APP_VERSION pentru serviciile backend și frontend?
